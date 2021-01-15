@@ -1,0 +1,28 @@
+{
+  "name": "vc-workspace-api",
+  "version": "1.0.0",
+  "description": "vc-workspace-api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gialynguyen/vc-workspace-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fastest-validator": "^1.6.1",
+    "formidable": "^1.2.2",
+    "image-size": "^0.9.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.10.0",
+    "morgan": "^1.10.0"
+  }
+}
