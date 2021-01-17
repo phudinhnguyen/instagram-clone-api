@@ -1,10 +1,12 @@
-const { getByFilter: getUserByFilter } = require("./user");
-const { compare } = require("../lib/bcrypt");
-const authenticationService = require("../service/authentication").getServices();
-const controller = {};
 
-controller.login = async (email, password) => {
-    const [user] = await getUserByFilter({ email });
+const { compare } = require("../lib/bcrypt");
+const userController = require("./user");
+const authenticationService = require("../service/authentication").getServices();
+const authController = {};
+
+authController.login = async (userName, password) => {
+    const [user] = await userController.getByFilter({ userName });
+
     if (!user) return;
 
     const hashedPassword = user.password;
@@ -20,4 +22,4 @@ controller.login = async (email, password) => {
     };
 }
 
-module.exports = controller;
+module.exports = authController;

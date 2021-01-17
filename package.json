@@ -1,7 +1,7 @@
 {
-  "name": "vc-workspace-api",
+  "name": "instagram-clone-api",
   "version": "1.0.0",
-  "description": "vc-workspace-api",
+  "description": "instagram-clone-api",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
@@ -21,8 +21,14 @@
     "formidable": "^1.2.2",
     "image-size": "^0.9.1",
     "jsonwebtoken": "^8.5.1",
-    "mongodb": "^3.6.0",
-    "mongoose": "^5.10.0",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.12",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
   }
 }

@@ -6,7 +6,19 @@ const _schema = new Schema({
     type: String,
     required: true
   },
-  displayName: {
+  following: {
+    type: [Types.ObjectId],
+    required: true,
+    default: []
+  },
+  userName: {
+    type: String,
+    required: true
+  },
+  phone: {
+    type: String
+  },
+  email: {
     type: String,
     required: true
   },
@@ -14,22 +26,10 @@ const _schema = new Schema({
     type: String,
     required: true
   },
-  email: {
-    type: String,
-    required: true
-  },
-  roleId: {
-    type: Types.ObjectId
-  },
   avatar: {
-    type: Types.ObjectId
+    type: String,
+    required: true,
   },
-  phone: {
-    type: String
-  },
-  deletedAt: {
-    type: Date
-  }
 }, { timestamps: true })
 
 module.exports = model("user", _schema);
